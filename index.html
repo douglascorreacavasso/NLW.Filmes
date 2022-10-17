@@ -1,26 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&amp;display=swap" rel="stylesheet">
     <!-- Começa aki link para Icone do titulo do site-->
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icone/apple-icon-57x57.png" > 
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icone/apple -icon-60x60.png" > 
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/icone/apple-icon-72x72.png" > 
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icone/apple-icon-76x76.png" > 
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icone/apple-icon-114x114.png"> 
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icone/apple-icon-120x120.png" > 
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icone/apple-icon-144x144.png" > 
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icone/apple-icon-152x152.png" > 
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icone/apple-icon-180x180.png" > 
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/icone/android-icon-192x192.png" > 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icone/favicon-32x32.png" > 
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icone/favicon-96x96.png" > 
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icone/favicon-16x16. png" > 
-    <link rel="manifest" href="./assets/icone/manifest.json" > 
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icone/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icone/apple -icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/icone/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icone/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icone/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icone/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icone/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icone/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icone/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/icone/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icone/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icone/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icone/favicon-16x16. png">
+    <link rel="manifest" href="./assets/icone/manifest.json">
     <meta name="msapplication-TileColor" content="#037ae2">
-    <meta name="msapplication-TileImage" content="./assets/icone/ms-icon-144x144.png" > 
+    <meta name="msapplication-TileImage" content="./assets/icone/ms-icon-144x144.png">
     <meta name="theme-color" content="#037ae2">
     <!-- Acaba aki link para Icone do titulo do site-->
     <meta charset="utf-8">
@@ -30,160 +31,486 @@
     <meta name="author" content="Douglas Corrêa Cavasso">
 
     <link rel="stylesheet" href="./styles.css">
- <title> NLW Filmes e Séries</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <title> NLW Filmes e Séries</title>
 </head>
+
 <body>
     <header>
-        <div> 
-            <img src="https://github.com/douglascorreacavasso.png" 
-                 alt="Foto do Douglas Corrêa Cavasso"
+        <div>
+            <img src="https://github.com/douglascorreacavasso.png" alt="Foto do Douglas Corrêa Cavasso">
         </div>
     </header>
-  <main> 
-    <section>
-        <div>
-            <h2>Meus Filmes</h2>
-            <p>Os Filmes que mais curto</p>
-            
-            <ul class="games-list">
-                <li c>
-                    <a 
-                        target="_blank"
-                        href="https://www.themoviedb.org/movie/8922?language=pt-BR">
-                            <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4deKiUXWqyATIEKCBSjRxCOLvu0.jpg" alt="Imagem do filme Olhos Famintos">
-                    </a>
-                </li>
+    <main>
+        <section>
+            <div>
+                <h2>Meus Filmes</h2>
+                <p>Os Filmes que mais curto</p>
 
-                <li>
-                    <a 
-                        target="_blank"
-                        href="https://www.themoviedb.org/movie/636879?language=pt-BR">
-                            <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/9LcOsiSqeR94knLnpJ0ktnOx7OQ.jpg" alt="Imagem do filme Oração Diabólica"> 
-                    </a>
-                </li>
+                <div class=" swiper mySwiper ">
+                    <ul class="movie-list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/8922?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4deKiUXWqyATIEKCBSjRxCOLvu0.jpg"
+                                    alt="Imagem do filme Olhos Famintos">
+                            </a>
+                        </li>
 
-                <li>
-                    <a 
-                        target="_blank"
-                        href="https://www.themoviedb.org/movie/715658?language=pt-BR">
-                            <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/yPuyVIbMuz4V9CHIvuLy6IzPjby.jpg" alt="Imagem do filme Cura Fatal">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/636879?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/9LcOsiSqeR94knLnpJ0ktnOx7OQ.jpg"
+                                    alt="Imagem do filme Oração Diabólica">
+                            </a>
+                        </li>
 
-    <section>
-        <div>
-            <h2 >Séries </h2>
-            <p>Lista de Séries que mais curto</p>
-            
-            <ul class="channel-list">
-                <li c>
-                    <a 
-                        target="_blank"
-                        href="https://www.themoviedb.org/tv/60625?language=pt-BR">
-                            <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/8kOWDBK6XlPUzckuHDo3wwVRFwt.jpg" alt="Imagem da serie Rick and Morty">
-                    </a>
-                </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/715658?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/yPuyVIbMuz4V9CHIvuLy6IzPjby.jpg"
+                                    alt="Imagem do filme Cura Fatal">
+                            </a>
+                        </li>
 
-                <li>
-                    <a 
-                        target="_blank"
-                        href="https://www.themoviedb.org/tv/76479?language=pt-BR ">
-                            <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg" alt="Imagem da serie The Boys">
-                           
-                    </a>
-                </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/960704?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/uMzOYHGiHEfknowTlg3o72gSvHy.jpg"
+                                    alt="Imagem do filme Fullmetal Alchemist: A Alquimia Final">
+                            </a>
+                        </li>
 
-                <li>
-                    <a 
-                        target="_blank"
-                        href="https://www.themoviedb.org/tv/92783?language=pt-BR">
-                            <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4xNH5hHPpTJptSWANyAX3OLZoNM.jpg" alt="Imagem da serie  Mulher-Hulk: Defensora de Heróis">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/575322?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/aVLV38txajXhEy2qNEClPIsDbAH.jpg"
+                                    alt="Imagem do filme Gemini: O Planeta Sombrio">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/634649?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/fVzXp3NwovUlLe7fvoRynCmBPNc.jpg"
+                                    alt="Imagem do filme Homem-Aranha: Sem Volta Para Casa">
+                            </a>
+                        </li>
 
-    <section>
-        <div>
-            <h2  >Animações</h2>
-            <p>Lista de Animações que mais curto</p>
-            
-            <ul class="channel-list">
-                <li c>
-                    <a 
-                        target="_blank"
-                        href="https://www.themoviedb.org/movie/4935?language=pt-BR">
-                            <img src="https://www.themoviedb.org/t/p/w94_and_h141_bestv2/1hTfaEWktMJPxCk5nZNtK7F86C9.jpg" alt="Imagem da animação O Castelo Animado">
-                    </a>
-                </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/760161?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/uRdpVgEufzYNVnDPTXEjt0mpD99.jpg"
+                                    alt="Imagem do filme Órfã 2: A Origem">
+                            </a>
+                        </li>
 
-                <li>
-                    <a 
-                        target="_blank"
-                        href="https://www.themoviedb.org/movie/9297?language=pt-BR">
-                            <img src="https://www.themoviedb.org/t/p/w94_and_h141_bestv2/xupl38cCwm8BnQvCkec9znMPSEG.jpg" alt="Imagem da animação  A Casa Monstro">
-                           
-                    </a>
-                </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/616037?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/71XnRvkadkWZZowCGcuBi4XAKdJ.jpg"
+                                    alt="Imagem do filme Thor: Amor e Trovão">
+                            </a>
+                        </li>
 
-                <li>
-                    <a 
-                        target="_blank"
-                        href="https://www.themoviedb.org/movie/129?language=pt-BR">
-                            <img src="https://www.themoviedb.org/t/p/w94_and_h141_bestv2/e7WdOF6j3wB5kFXIEoqGXKmGaTl.jpg" alt="Imagem da animação A Viagem de Chihiro">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    
-  </main>
-  
-  <div style="display: none" class="ubey-RecordingScreen-count-down ubey-RecordingScreen-count-down-container">
-   <style>
-        .ubey-RecordingScreen-count-down-container {
-            position: fixed;
-            height: 100vh;
-            width: 100vw;
-            top: 0;
-            left: 0;
-            z-index: 9999999999999;
-            background-color: rgba(0, 0, 0, 0.2);
-        }
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/453395?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/boIgXXUhw5O3oVkhXsE6SJZkmYo.jpg"
+                                    alt="Imagem do filme Doutor Estranho no Multiverso da Loucura">
+                            </a>
+                        </li>
 
-        .ubey-RecordingScreen-count-down-content {
-            position: absolute;
-            display: flex;
-            top: 50%;
-            left: 50%;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            height: 15em;
-            width: 15em;
-            transform: translate(-50%, -100%);
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 50%;
-        }
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/960700?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/qsgF3IyWmNOnYqNtweaqySWpYTz.jpg"
+                                    alt="Imagem do filme Fullmetal Alchemist: A Vingança de Scar">
+                            </a>
+                        </li>
 
-        #ubey-RecordingScreen-count-count {
-            font-size: 14em;
-            transform: translateY(-2%);
-        }
-    </style>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/526896?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg"
+                                    alt="Imagem do filme Morbius">
+                            </a>
+                        </li>
 
-    
-    <div class="ubey-RecordingScreen-count-down-content">
-        <span id="ubey-RecordingScreen-count-count"></span>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/836225?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/7y181pPW5P6xhcEbAVTv01bVJov.jpg"
+                                    alt="Imagem do filme Exorcismo Sagrado">
+                            </a>
+                        </li>
 
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/338953?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/gopGghuMtmdMviBcl9G0JfVB2RZ.jpg"
+                                    alt="Imagem do filme Animais Fantásticos: Os Segredos de Dumbledore">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Séries </h2>
+                <p>Lista de Séries que mais curto</p>
+                <div class=" swiper mySwiper ">
+                    <ul class=" series-list swiper-wrapper ">
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/60625?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/8kOWDBK6XlPUzckuHDo3wwVRFwt.jpg"
+                                    alt="Imagem da serie Rick and Morty">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/76479?language=pt-BR ">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg"
+                                    alt="Imagem da serie The Boys">
+
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/92783?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4xNH5hHPpTJptSWANyAX3OLZoNM.jpg"
+                                    alt="Imagem da serie  Mulher-Hulk: Defensora de Heróis">
+                            </a>
+                        </li>
+
+
+
+
+
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/84773?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/b5pl6GmQmTCHmZKEBhXPN0gmoAq.jpg"
+                                    alt="Imagem da serie  O Senhor dos Anéis: Os Anéis de Poder">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/90462?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/kY0BogCM8SkNJ0MNiHB3VTM86Tz.jpg"
+                                    alt="Imagem da serie  Chucky">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/1413?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/kxtWasoZ7Q92erTJuuRtZiXTPiH.jpg"
+                                    alt="Imagem da serie American Horror Story">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/456?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/eMJYtdMmtiUI2WHYvoR0BmRGq51.jpg"
+                                    alt="Imagem da serie Os Simpsons">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/90802?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/q54qEgagGOYCq5D1903eBVMNkbo.jpg"
+                                    alt="Imagem da serie Sandman">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/92749?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/tkc7AVyUoG9VEeDvukN0TVqa24C.jpg"
+                                    alt="Imagem da serie Cavaleiro da Lua">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/1622?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/ovFzkkKknAo2SbM2DfOabxRvzmy.jpg"
+                                    alt="Imagem da serie Sobrenatural">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/18165?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/lcGQaSrWkkxGuh0JJqyN2TkuNqb.jpg"
+                                    alt="Imagem da serie Diários de um Vampiro">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/tv/126254?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/9j67wXS4uhPueFBwhAIoD4GxOP3.jpg"
+                                    alt="Imagem da serie O Clube da Meia-Noite">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Animações</h2>
+                <p>Lista de Animações que mais curto</p>
+                <div class=" swiper mySwiper ">
+                    <ul class=" anime-list  swiper-wrapper ">
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/4935?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w94_and_h141_bestv2/1hTfaEWktMJPxCk5nZNtK7F86C9.jpg"
+                                    alt="Imagem da animação O Castelo Animado">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/9297?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w94_and_h141_bestv2/xupl38cCwm8BnQvCkec9znMPSEG.jpg"
+                                    alt="Imagem da animação  A Casa Monstro">
+
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/129?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w94_and_h141_bestv2/e7WdOF6j3wB5kFXIEoqGXKmGaTl.jpg"
+                                    alt="Imagem da animação A Viagem de Chihiro">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/14836?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/805EGizPf6LnFVPGReaa44sBqJr.jpg"
+                                    alt="Imagem da animação Coraline e o Mundo Secreto">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/9479?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/pyMGhuAWC7nYyolKJlFbT7pp02K.jpg"
+                                    alt="Imagem da animação O Estranho Mundo de Jack">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/877957?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/zOkalOuwZl1KuOLIkBqVuOVpGKq.jpg"
+                                    alt="Imagem da animação Drifting Home">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/568124?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"
+                                    alt="Imagem da animação Encanto">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/508947?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/725WE0Qb1BbUF7aGvjiQqzzffpg.jpg"
+                                    alt="Imagem da animação Red: Crescer é Uma Fera">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/3933?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/89B6W9mlTfSxeMEFMSyRBViXy83.jpg"
+                                    alt="Imagem da animação A Noiva Cadáver">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/502356?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/hfXy6zCKLtAGwpNDvh2rJLfPzKm.jpg"
+                                    alt="Imagem da animação Super Mario Bros.: O Filme">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.themoviedb.org/movie/862?language=pt-BR">
+                                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/6AafgfifXkFS4g2xGJZIwsPQK6P.jpg"
+                                    alt="Imagem da animação Toy Story: Um Mundo de Aventuras">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Minhas redes</h2>
+                <p>Se conecte comigo agora mesmo</p>
+
+                <ul class="social-list">
+                    <!-- Imagem e Link do meu Facebook -->
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/douglas.cavasso">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 479.28 479.28"
+                                style=" width: 24px ;enable-background:new 0 0 479.28 479.28;" xml:space="preserve">
+                                <path style="fill:#1D5DAA;" d="M239.008,1.576c-131.984,0-237.376,107.016-237.376,239c0,120,85.368,219.328,205.368,236.392V327.64
+                           h-56v-64h56v-48.832c0-53.624,32.272-82.816,80.112-82.816c22.912,0,39.888,1.704,47.888,2.472v56.032l-33.064,0.016
+                           c-26.008,0-30.936,12.376-30.936,30.496v42.632h59.48l-8.088,64H271v150.064c112-14.512,208.28-115.112,208.28-237.128
+                           C479.28,108.592,370.992,1.576,239.008,1.576z" />
+                                <path style="fill:#064D93;"
+                                    d="M408,71.576c-93.328-93.328-244.672-93.328-338,0l137.28,137.272
+                           C209.608,159.92,240.44,132,285.48,132c22.912,0,41.52,1.704,49.52,2.472v56.032l-33.064,0.016
+                           c-26.008,0-30.936,12.376-30.936,30.496v42.624h59.48l-8.088,64h-0.288l84.632,82.68C500.056,316.992,501.328,164.904,408,71.576z" />
+                                <path style="fill:#3E78CC;" d="M14,254.576c0-131.984,107.024-239,239.008-239c62.432,0,119.24,23.968,161.832,63.168
+                           C371.16,31.304,308.568,1.576,239.008,1.576C107.024,1.576,0,108.592,0,240.576C0,310.12,29.752,372.72,77.168,416.408
+                           C37.976,373.824,14,317,14,254.576z" />
+                                <g>
+                                    <path style="fill:#064D93;"
+                                        d="M271,325.184V442l28.736,30c29.04-7.44,55.6-21.168,79.296-38.152L271,325.184z" />
+                                    <polygon style="fill:#064D93;"
+                                        points="207,327.64 151.232,327.64 152.288,326.216 207,377.312 	" />
+                                </g>
+                                <g>
+                                    <circle style="fill:#5397EA;" cx="83.832" cy="115.544" r="8.664" />
+                                    <circle style="fill:#5397EA;" cx="83.832" cy="173.048" r="8.664" />
+                                    <circle style="fill:#5397EA;" cx="145.336" cy="115.544" r="8.664" />
+                                </g>
+                                <g>
+                                    <circle style="fill:#1D5DAA;" cx="228.336" cy="61.544" r="8.664" />
+                                    <circle style="fill:#1D5DAA;" cx="393.8" cy="142.232" r="8.672" />
+                                    <circle style="fill:#1D5DAA;" cx="306.944" cy="77.072" r="4.832" />
+                                </g>
+                                <circle style="fill:#5397EA;" cx="86.784" cy="353.24" r="4.832" />
+                                <circle style="fill:#1D5DAA;" cx="154.28" cy="71.72" r="2.112" />
+                                <g>
+                                    <circle style="fill:#5397EA;" cx="83.832" cy="261.544" r="8.664" />
+                                    <path style="fill:#5397EA;" d="M87,255.248c0,1.504-2.512,2.704-4.008,2.704l0,0c-1.48,0-3.992-1.2-3.992-2.704V120.92
+                               c0-1.504,2.512-2.704,3.992-2.704l0,0c1.504,0,4.008,1.2,4.008,2.704V255.248z" />
+                                    <path style="fill:#5397EA;" d="M142.672,111.64c1.488,0,2.696,2.496,2.704,4l0,0c-0.016,1.488-1.216,4-2.704,4H88.328
+                               c-1.496,0-2.704-2.512-2.704-4l0,0c0-1.504,1.208-4,2.704-4H142.672z" />
+                                    <circle style="fill:#5397EA;" cx="125.336" cy="173.048" r="8.664" />
+                                    <path style="fill:#5397EA;" d="M122.064,167.64c0.984,0,1.816,2.504,1.816,4.008l0,0c-0.024,1.488-0.832,3.992-1.816,3.992H85.456
+                               c-1,0-1.832-2.504-1.832-3.992l0,0c0-1.504,0.832-4.008,1.832-4.008H122.064z" />
+                                    <circle style="fill:#5397EA;" cx="394.2" cy="363.72" r="8.672" />
+                                    <circle style="fill:#5397EA;" cx="332.672" cy="363.72" r="8.672" />
+                                    <circle style="fill:#5397EA;" cx="394.2" cy="217.72" r="8.672" />
+                                    <path style="fill:#5397EA;" d="M391,224.032c0-1.504,2.496-2.704,4-2.704l0,0c1.488,0,4,1.2,4,2.704V358.36
+                               c0,1.504-2.512,2.704-4,2.704l0,0c-1.504,0-4-1.2-4-2.704V224.032z" />
+                                    <path style="fill:#5397EA;" d="M335.344,367.64c-1.488,0-2.704-2.496-2.704-4l0,0c0.016-1.488,1.216-4,2.704-4h54.344
+                               c1.488,0,2.704,2.512,2.704,4l0,0c0,1.504-1.216,4-2.704,4H335.344z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <br>
+                    <!-- Imagem e Link do meu GitHub -->
+                    <li>
+                        <a target="_blank" href="https://github.com/douglascorreacavasso">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496"
+                                style=" width: 24px ; enable-background:new 0 0 496 496;" xml:space="preserve">
+                                <path id="SVGCleanerId_0" style="fill:#3E77BF;"
+                                    d="M247.992,5.163C111.048,5.163,0,116.627,0,254.163
+                       c0,109.992,71.048,203.32,169.632,236.24c12.392,2.296,16.912-5.392,16.912-12c0-5.904-0.216-21.56-0.336-42.344
+                       c-69,15.064-83.552-33.376-83.552-33.376c-11.264-28.768-27.52-36.408-27.52-36.408c-22.528-15.456,1.696-15.16,1.696-15.16
+                       c24.88,1.752,37.976,25.672,37.976,25.672c22.144,38.048,58.064,27.048,72.192,20.672c2.232-16.08,8.656-27.064,15.736-33.28
+                       c-55.056-6.296-112.944-27.64-112.944-123.04c0-27.176,9.656-49.408,25.52-66.832c-2.568-6.296-11.072-31.6,2.416-65.872
+                       c0,0,20.832-6.688,68.2,25.52c19.784-5.52,41-8.28,62.096-8.392c21.048,0.112,42.28,2.864,62.096,8.392
+                       c47.328-32.208,68.128-25.52,68.128-25.52c13.52,34.272,5.016,59.576,2.456,65.872c15.904,17.424,25.504,39.648,25.504,66.832
+                       c0,95.64-57.984,116.68-113.232,122.856c8.904,7.688,16.832,22.872,16.832,46.112c0,33.296-0.296,60.128-0.296,68.296
+                       c0,6.672,4.472,14.424,17.048,11.968C425.016,457.387,496,364.123,496,254.163C496,116.627,384.952,5.163,247.992,5.163z" />
+                                <g>
+                                    <path id="SVGCleanerId_0_1_" style="fill:#3E77BF;"
+                                        d="M247.992,5.163C111.048,5.163,0,116.627,0,254.163
+                           c0,109.992,71.048,203.32,169.632,236.24c12.392,2.296,16.912-5.392,16.912-12c0-5.904-0.216-21.56-0.336-42.344
+                           c-69,15.064-83.552-33.376-83.552-33.376c-11.264-28.768-27.52-36.408-27.52-36.408c-22.528-15.456,1.696-15.16,1.696-15.16
+                           c24.88,1.752,37.976,25.672,37.976,25.672c22.144,38.048,58.064,27.048,72.192,20.672c2.232-16.08,8.656-27.064,15.736-33.28
+                           c-55.056-6.296-112.944-27.64-112.944-123.04c0-27.176,9.656-49.408,25.52-66.832c-2.568-6.296-11.072-31.6,2.416-65.872
+                           c0,0,20.832-6.688,68.2,25.52c19.784-5.52,41-8.28,62.096-8.392c21.048,0.112,42.28,2.864,62.096,8.392
+                           c47.328-32.208,68.128-25.52,68.128-25.52c13.52,34.272,5.016,59.576,2.456,65.872c15.904,17.424,25.504,39.648,25.504,66.832
+                           c0,95.64-57.984,116.68-113.232,122.856c8.904,7.688,16.832,22.872,16.832,46.112c0,33.296-0.296,60.128-0.296,68.296
+                           c0,6.672,4.472,14.424,17.048,11.968C425.016,457.387,496,364.123,496,254.163C496,116.627,384.952,5.163,247.992,5.163z" />
+                                </g>
+                                <g>
+                                    <path style="fill:#114C82;" d="M378.496,109.131c13.128,33.904,4.752,58.928,2.2,65.176c15.904,17.424,25.504,39.648,25.504,66.832
+                           c0,95.64-57.984,116.68-113.232,122.856c8.904,7.688,16.832,22.872,16.832,46.112c0,33.296-0.296,60.128-0.296,68.296
+                           c0,6.672,4.472,14.424,17.048,11.968C425.016,457.387,496,364.123,496,254.163c0-29.56-5.152-57.896-14.568-84.2
+                           C447.24,133.963,409.184,109.987,378.496,109.131z" />
+                                    <path style="fill:#114C82;" d="M192.976,377.323c2.784-5.616,6.184-9.984,9.76-13.144c-30.176-3.456-61.168-11.512-83.048-33.744
+                           C136.52,358.451,163.928,371.195,192.976,377.323z" />
+                                </g>
+                                <path style="fill:#6CA9EA;" d="M12.912,270.947c0-137.536,111.048-249,247.992-249c76.04,0,144.056,34.392,189.536,88.488
+                       C405.52,46.755,331.616,5.163,247.992,5.163C111.048,5.163,0,116.627,0,254.163c0,61.32,22.12,117.424,58.752,160.792
+                       C29.944,374.291,12.912,324.643,12.912,270.947z" />
+                                <path style="fill:#083E66;" d="M322.712,426.899c0-23.232-7.928-38.44-16.832-46.128c55.248-6.16,113.24-27.216,113.24-122.848
+                       c0-27.184-9.6-49.4-25.52-66.824c2.576-6.296,11.096-31.608-2.456-65.872c0,0-2.576-0.792-7.896-0.488
+                       c5.808,25.84-0.416,44.32-2.552,49.568c15.904,17.424,25.504,39.648,25.504,66.832c0,95.64-57.984,116.68-113.232,122.856
+                       c8.904,7.688,16.832,22.872,16.832,46.112c0,33.296-0.296,60.128-0.296,68.296c0,5.872,3.496,12.568,12.92,12.408
+                       C322.488,479.555,322.712,455.659,322.712,426.899z" />
+                                <path style="fill:#114C82;" d="M117.464,423.995c5.208,10.72,22.712,36.4,68.888,30.992c-0.064-5.648-0.112-11.976-0.144-18.928
+                       C150.584,443.835,129.552,434.667,117.464,423.995z" />
+                                <path style="fill:#6CA9EA;" d="M126.368,391.387c-1.592-2.4-4.576-6.472-8.904-10.544
+                       C120.272,385.011,123.256,388.507,126.368,391.387z" />
+
+                            </svg>
+
+                        </a>
+                    </li>
+
+                    <!-- Imagem e Link do meu Linkedin -->
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/douglas-corr%C3%AAa-cavasso-531b9b196/">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 496 496" style="width: 24px ;enable-background:new 0 0 496 496;" xml:space="preserve">
+                       <g>
+                           <g>
+                               <rect id="SVGCleanerId_0" x="16" y="168.728" style="fill:#187FB8;" width="96" height="304"/>
+                           </g>
+                           <g>
+                               <rect id="SVGCleanerId_0_1_" x="16" y="168.728" style="fill:#187FB8;" width="96" height="304"/>
+                           </g>
+                       </g>
+                       <g>
+                           <rect id="SVGCleanerId_0_2_" x="16" y="168.728" style="fill:#1267A0;" width="96" height="304"/>
+                       </g>
+                       <path style="fill:#187FB8;" d="M16,340.712c24,9.616,56,17.664,96,23.88V168.728H16V340.712z"/>
+                       <path style="fill:#2499CE;" d="M16,207.92c24,9.624,56,17.664,96,23.88v-63.072H16V207.92z"/>
+                       <path style="fill:#187FB8;" d="M374.912,164.944c-55.4,0-94.912,29.976-94.912,51v-47.216H168.208c1.408,24,0,304,0,304H280V308.424
+                           c0-9.2-2.032-18.416,0.76-25.04c7.472-18.416,21.52-37.512,50.368-37.512c37.712,0,52.872,28.312,52.872,69.8v157.056h112V303.864
+                           C496,208.984,443.608,164.944,374.912,164.944z"/>
+                       <path style="fill:#1267A0;" d="M374.912,164.944c-55.4,0-94.912,29.976-94.912,51v-47.216H168.208c1.408,24,0,304,0,304H280V308.424
+                           c0-9.2-2.032-18.416,0.76-25.04c7.472-18.416,21.52-37.512,50.368-37.512c37.712,0,52.872,28.312,52.872,69.8v157.056h112V303.864
+                           C496,208.984,443.608,164.944,374.912,164.944z"/>
+                       <path style="fill:#187FB8;" d="M374.912,164.944c-55.4,0-94.912,29.976-94.912,51v-47.216H168.208
+                           c0.832,16,0.672,121.344,0.4,204.592c34.624,3.832,71.392,5.744,111.392,5.824v-70.72c0-9.2,0.208-11.048,0.208-11.048
+                           c0-28.904,22.064-51.504,50.92-51.504c37.712,0,52.872,28.312,52.872,69.8v57.808c40-4.168,77.976-10.56,112-18.824v-50.8
+                           C496,208.984,443.608,164.944,374.912,164.944z"/>
+                       <g>
+                           <path style="fill:#2499CE;" d="M374.912,164.944c-55.4,0-94.912,29.976-94.912,51v-47.216H168.208
+                               c0.408,8,0.576,35.344,0.616,72.112c35.224,3.888,72.152,5.76,110.192,5.76c72.096,0,140.904-7.584,201.08-20.776
+                               C459.008,184.72,420.68,164.944,374.912,164.944z"/>
+                           <path style="fill:#2499CE;" d="M59.064,23.272C23.352,23.272,0,45.792,0,76.048c0,29.688,22.68,52.68,57.68,52.68h0.704
+                               c36.336,0,58.96-23.08,58.96-52.752C116.664,45.728,94.728,23.272,59.064,23.272z"/>
+                       </g>
+                       <path style="fill:#187FB8;" d="M59.064,52.08C23.352,52.08,0,45.792,0,76.048c0,29.688,22.68,52.68,57.68,52.68h0.704
+                           c36.336,0,58.96-23.08,58.96-52.752C116.664,45.728,94.728,52.08,59.064,52.08z"/>
+                       <path style="fill:#1267A0;" d="M59.064,96.016C23.352,96.016,0,66.624,0,76.048c0,29.688,22.68,52.68,57.68,52.68h0.704
+                           c36.336,0,58.96-23.08,58.96-52.752C117.136,66.568,94.248,96.016,59.064,96.016z"/>
+                 
+                       </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            loop: true
+        });
+    </script>
 
     </div>
-</div>
-  
-  </body>
+    </div>
+
+</body>
+
 </html>
 >

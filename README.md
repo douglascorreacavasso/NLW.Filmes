@@ -14,6 +14,7 @@ da Rocketseat.
 - HTML
 - CSS
 - Git e Github
+- JavaScript
 
 ## Contato
 
